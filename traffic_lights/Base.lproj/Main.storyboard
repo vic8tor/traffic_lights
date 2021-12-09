@@ -42,12 +42,11 @@
                                 <rect key="frame" x="164.5" y="658.5" width="85" height="39.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="3Bk-lx-4Ld"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="TYn-C0-GCi"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="l5A-VP-ilD"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="fixed">
+                                <buttonConfiguration key="configuration" style="plain" title="Start" cornerStyle="fixed">
                                     <backgroundConfiguration key="background" cornerRadius="21">
                                         <color key="backgroundColor" red="0.15289655734347762" green="0.1685864514209432" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
