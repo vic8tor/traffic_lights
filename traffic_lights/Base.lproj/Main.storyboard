@@ -16,6 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56B-Qg-sEF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuZ-1Z-iB3">
+                                        <rect key="frame" x="156" y="582.5" width="102" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="9RU-aF-H3Q"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="21">
+                                                <color key="backgroundColor" red="0.15289655734347762" green="0.1685864514209432" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="38"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startSwitch" destination="BYZ-38-t0r" eventType="touchUpInside" id="23u-oV-Mng"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic lights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-tD-mCe">
+                                        <rect key="frame" x="135.5" y="685" width="143" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lcS-tD-mCe" secondAttribute="height" multiplier="47:10" id="8Uj-5C-PeL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                        <color key="textColor" red="0.0040661310777068138" green="0.10534752160310745" blue="0.99328917264938354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstItem="lcS-tD-mCe" firstAttribute="centerX" secondItem="56B-Qg-sEF" secondAttribute="centerX" id="SIp-9j-ddO"/>
+                                    <constraint firstItem="lcS-tD-mCe" firstAttribute="top" secondItem="HuZ-1Z-iB3" secondAttribute="bottom" constant="57.5" id="rsc-zB-j17"/>
+                                    <constraint firstItem="HuZ-1Z-iB3" firstAttribute="centerX" secondItem="56B-Qg-sEF" secondAttribute="centerX" id="wjh-dm-HGH"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gKg-N8-vMw">
                                 <rect key="frame" x="132" y="70.5" width="150" height="508"/>
                                 <subviews>
@@ -33,42 +70,26 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="V9t-bf-NCH"/>
-                                    <constraint firstAttribute="height" constant="508" id="VrK-MD-ORU"/>
-                                    <constraint firstAttribute="width" secondItem="gKg-N8-vMw" secondAttribute="height" multiplier="75:254" id="fzt-H7-oE2"/>
+                                    <constraint firstAttribute="width" secondItem="gKg-N8-vMw" secondAttribute="height" multiplier="75:254" id="g6b-gF-D12"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuZ-1Z-iB3">
-                                <rect key="frame" x="164.5" y="658.5" width="85" height="39.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="3Bk-lx-4Ld"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="l5A-VP-ilD"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start" cornerStyle="fixed">
-                                    <backgroundConfiguration key="background" cornerRadius="21">
-                                        <color key="backgroundColor" red="0.15289655734347762" green="0.1685864514209432" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startSwitch" destination="BYZ-38-t0r" eventType="touchUpInside" id="23u-oV-Mng"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HuZ-1Z-iB3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0kL-kn-8wc"/>
-                            <constraint firstItem="gKg-N8-vMw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.5" id="3yV-zh-nTB"/>
-                            <constraint firstItem="gKg-N8-vMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BcI-ot-kRZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HuZ-1Z-iB3" secondAttribute="bottom" constant="164" id="Lpy-dX-4QS"/>
-                            <constraint firstItem="HuZ-1Z-iB3" firstAttribute="top" secondItem="gKg-N8-vMw" secondAttribute="bottom" constant="80" id="v1f-oi-it2"/>
+                            <constraint firstItem="56B-Qg-sEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bn2-Ke-kHz"/>
+                            <constraint firstItem="56B-Qg-sEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D7p-6a-SSX"/>
+                            <constraint firstItem="56B-Qg-sEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="I5Q-jw-e5X"/>
+                            <constraint firstItem="gKg-N8-vMw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="J27-yy-nrX"/>
+                            <constraint firstItem="HuZ-1Z-iB3" firstAttribute="top" secondItem="gKg-N8-vMw" secondAttribute="bottom" constant="48" id="OfQ-It-sYD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56B-Qg-sEF" secondAttribute="bottom" id="YvV-zH-q9F"/>
+                            <constraint firstItem="gKg-N8-vMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l6L-zb-stB"/>
+                            <constraint firstItem="gKg-N8-vMw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.5" id="v2I-8V-no9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="greenView" destination="jqi-EP-Yil" id="mwE-C4-ugA"/>
+                        <outlet property="messageLabel" destination="lcS-tD-mCe" id="3vg-r9-vdD"/>
                         <outlet property="redView" destination="gVc-Bf-R1L" id="0co-Fl-9wc"/>
                         <outlet property="switchButton" destination="HuZ-1Z-iB3" id="eXZ-Kt-f0G"/>
                         <outlet property="yellowView" destination="ub1-Df-CFq" id="B5j-Y2-w9D"/>
@@ -80,6 +101,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
